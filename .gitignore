@@ -1,2 +1,5 @@
 # node
 node_modules/*
+
+src/static/*
+!src/static/.gitkeep
