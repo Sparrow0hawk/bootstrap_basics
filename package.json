@@ -4,7 +4,10 @@
   "description": "A basic bootstrap setup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx serve src/",
+    "build": "npm run build-css && npm run copy-assets",
+    "build-css": "sass --style compressed assets/main.scss src/static/main.min.css",
+    "copy-assets": "cp -r node_modules/bootstrap/dist/js src/static/"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +17,8 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
   }
 }
