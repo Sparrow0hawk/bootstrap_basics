@@ -2,6 +2,8 @@
 $primary: #900;
 $enable-shadows: true;
 $prefix: "mo-";
+$body-bg: red;
+$body-color: white;
 
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
