@@ -1,5 +1,7 @@
 # node
 node_modules/*
 
-src/static/*
+src/static/*.min.css
+src/static/*.min.css.map
+src/static/js/
 !src/static/.gitkeep
